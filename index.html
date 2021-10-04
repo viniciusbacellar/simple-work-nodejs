@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rent a House</title>
+</head>
+
+<body>
+  <div id="div-principal">
+    <h1>Rent a House</h1>
+    <img src="img/house.jpg" alt="house">
+    <p>Valor inicial do aluguel: R$ 800,00</p>
+    <h2>Características Adicionais</h2>
+    <form action="script.js" style="text-align: left;">
+      <fieldset>
+        <legend>Quantidade de Quantos</legend>
+        <p>
+          <input name="input" type="checkbox" value="0,00">
+          <span>1 (+ R$ 0,00)</span>
+        </p>
+        <p>
+          <input name="input" type="checkbox" value="100,00">
+          <span>2 (+ R$ 100,00)</span>
+        </p>
+        <p>
+          <input name="input" type="checkbox" value="200,00">
+          <span>3 (+ R$ 200,00)</span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quantidade de Vagas</legend>
+        <p>
+          <input name="input" type="checkbox" value="0,00">
+          <span>0 (+ R$ 0,00)</span>
+        </p>
+        <p>
+          <input name="input" type="checkbox" value="150,00">
+          <span>1 (+ R$ 150,00)</span>
+        </p>
+        <p>
+          <input name="input" type="checkbox" value="300,00">
+          <span>3 (+ R$ 300,00)</span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vagas no canil</legend>
+        <p>
+          <input name="input" type="checkbox" value="0,00">
+          <span>0 (+ R$ 0,00)</span>
+        </p>
+        <p>
+          <input name="input" type="checkbox" value="100,00">
+          <span>1 (+ R$ 100,00)</span>
+        </p>
+        <p>
+          <input name="input" type="checkbox" value="150,00">
+          <span>3 (+ R$ 150,00)</span>
+        </p>
+      </fieldset>
+    </form>
+    <p id="finalValor"></p>
+    <button id="button">Calcular Preço Final</button>
+    <button id="buttonInicial">Voltar ao valor inicial</button>
+  </div>
+
+  <script src="js/calculo.js"></script>
+</body>
+
+</html>
